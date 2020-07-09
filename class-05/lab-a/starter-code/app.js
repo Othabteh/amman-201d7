@@ -122,6 +122,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     var mult = 1;
     for (var i = 0; i < testDynamicArray.length; i++) {
         mult = mult * testDynamicArray[i];
+        
     }
     return [mult, "The numbers 1,2,3,4,5 have a product of "+mult+"."];
     // console.log(multiplyAnyArray);

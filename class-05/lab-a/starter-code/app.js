@@ -1,3 +1,4 @@
+
 'use strict';
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
@@ -135,3 +136,4 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+

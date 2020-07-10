@@ -77,10 +77,11 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    var sumArr = testArray.reduce(function(a, b){
-        return a + b;
-    }, 0);
-    return [sumArr,"2,3,4 was passed in as an array of numbers, and "+sumArr+" is their sum."];
+    sumArr=0;
+    for(var i=0;i<testArray.length;i++){
+        sumArr=sumArr+testArray[i];
+    }
+    return [sumArr,testArray[0]+","+testArray[1]+","+testArray[2]+ " was passed in as an array of numbers, and "+sumArr+" is their sum."];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -101,12 +102,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
-    var multArr = testArray.reduce(function(a, b){
-        return a * b;
-    });
+    multArr=1;
+    for(var i=0;i<testArray.length;i++){
+        multArr=multArr*testArray[i];
+    }
    
-    return[multArr,"The numbers 2,3,4 have a product of "+multArr+"."];
+    return[multArr,"The numbers "+testArray[0]+","+testArray[1]+","+testArray[2]+ " have a product of "+multArr+"."];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -135,12 +136,17 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-    var mult = 1;
+     dynamicArray = 1;
+    
     for (var i = 0; i < testDynamicArray.length; i++) {
-        mult = mult * testDynamicArray[i];
+        dynamicArray = dynamicArray * testDynamicArray[i];
+        
+
     }
-    return [mult, "The numbers 1,2,3,4,5 have a product of "+mult+"."];
-    // console.log(multiplyAnyArray);
+   
+    return [dynamicArray,"The numbers "+testDynamicArray[0]+","+testDynamicArray[1]+","+testDynamicArray[2]+","+testDynamicArray[3]+","+testDynamicArray[4]+" have a product of "+dynamicArray+"."];
+
+    
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it

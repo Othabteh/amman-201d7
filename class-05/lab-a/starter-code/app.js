@@ -92,10 +92,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
 
-    var multArr = testArray.reduce(function(a, b){
-        return a * b;
-    });
-   
+    multArr=1;
+    for(var i=0;i<testArray.length;i++){
+        multArr=multArr*testArray[i];
+    }
     return[multArr,"The numbers 2,3,4 have a product of "+multArr+"."];
 }
 

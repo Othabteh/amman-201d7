@@ -73,6 +73,7 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
 
 }
+    
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -92,6 +93,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+
 
 }
 
@@ -120,11 +122,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-    dynamicArray = 1;
+
+    
+
+     dynamicArray = 1;
+
     
     for (var i = 0; i < testDynamicArray.length; i++) {
         dynamicArray = dynamicArray * testDynamicArray[i];
         
+
     }
    
     return [dynamicArray,"The numbers "+testDynamicArray[0]+","+testDynamicArray[1]+","+testDynamicArray[2]+","+testDynamicArray[3]+","+testDynamicArray[4]+" have a product of "+dynamicArray+"."];

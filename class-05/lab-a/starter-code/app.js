@@ -83,6 +83,7 @@ function sumArray(sumArr) { //eslint-disable-line
     }
     return [sumArr,testArray[0]+","+testArray[1]+","+testArray[2]+ " was passed in as an array of numbers, and "+sumArr+" is their sum."];
 }
+    
 
 // Here is the test for sumArray(); uncomment it to run it
 
